@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ddd;
+}
+
+.pagina {
+    width: 100vh;
+    height: 100vh;
+    background-color: white;
+}
+
+.amarillo {
+    height: 30%;
+    background-color: #ffd783;
+}
+
+.cuadrados {
+    height: 55%;
+    background-color: white;
+}
+
+.abajo {
+    height: 15%;
+    background-color: lightgray;
+}
