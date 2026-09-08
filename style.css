@@ -24,9 +24,38 @@ body {
 .cuadrados {
     height: 55%;
     background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .abajo {
     height: 15%;
     background-color: lightgray;
+}
+
+.cuadrado {
+    width: 16vh;
+    height: 16vh;
+    box-sizing: border-box;
+    position: relative; 
+}
+
+.celeste {
+    background-color: #92D7DE; 
+    border: 3vh solid #BCEBEF;
+}
+
+.naranja {
+    background-color: #EE784A; 
+    border: 3vh solid #F89C76;
+}
+
+.amarillo-claro {
+    background-color: #FAD165; 
+    border: 3vh solid #FCE195;
 }
