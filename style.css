@@ -1,12 +1,9 @@
 body {
-    margin: 0;
     width: 100vw;
     height: 100vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-color: #ddd;
 }
 
@@ -14,48 +11,118 @@ body {
     width: 100vh;
     height: 100vh;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-.amarillo {
-    height: 30%;
-    background-color: #ffd783;
+.encabezado {
+    height: 28%;
+    background-color: #fcd269;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    gap: 8%;
 }
 
-.cuadrados {
-    height: 55%;
-    background-color: white;
+.avatar {
+    width: 110px;
+    height: 110px;
+    background-color: #f7bb43;
+    flex-shrink: 0;
+}
+
+.lineas-encabezado {
+    width: 100%;
+    height: 14px;
+    background-color: #f7bb43;
+    border-radius: 2px;
+    box-shadow: 
+        0 22px 0 0 white,
+        0 34px 0 0 white,
+        0 46px 0 0 white,
+        0 58px 0 -25px white;
+}
+
+.grid-tarjetas {
+    height: 52%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
+    padding: 20px 8%;
 }
 
-.abajo {
-    height: 15%;
-    background-color: lightgray;
+.tarjeta {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.cuadrado {
-    width: 16vh;
-    height: 16vh;
-    box-sizing: border-box;
-    position: relative; 
+.barra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 18px;
 }
 
-.celeste {
-    background-color: #92D7DE; 
-    border: 3vh solid #BCEBEF;
+.cuadro {
+    width: 55px;
+    height: 55px;
+    margin-top: 10px;
 }
 
-.naranja {
-    background-color: #EE784A; 
-    border: 3vh solid #F89C76;
+.celeste { 
+    background-color: #b7e8ec; 
+}
+.celeste .barra { 
+    background-color: #8ed3d8; 
+}
+.celeste .cuadro { 
+    background-color: #9cdbe0; 
 }
 
-.amarillo-claro {
-    background-color: #FAD165; 
-    border: 3vh solid #FCE195;
+.naranja { 
+    background-color: #f89374; 
+}
+.naranja .barra { 
+    background-color: #eb6e4a; 
+}
+.naranja .cuadro { 
+    background-color: #f07b58; 
+}
+
+.amarillo { 
+    background-color: #fce08a; 
+}
+.amarillo .barra { 
+    background-color: #f9c751; 
+}
+.amarillo .cuadro { 
+    background-color: #f5cf65; 
+}
+
+
+.footer {
+    height: 20%;
+    background-color: #e5e5e5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 0 8%;
+}
+
+.columna-footer {
+    width: 70%;
+    height: 10px;
+    background-color: #c4c4c4;
+    box-shadow: 
+        0 14px 0 -1px white,
+        0 22px 0 -1px white,
+        0 30px 0 -10px white;
 }
